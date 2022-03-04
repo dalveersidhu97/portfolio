@@ -69,3 +69,10 @@
         z-index: 100;
     }
 }
+
+@media (min-width: 681px) {
+
+    .top_nav.hide_nav {
+        display: flex;
+    }
+}
