@@ -39,3 +39,11 @@
     text-align: center;
     color: #f7f7f7;
   }
+
+  @media (max-width: 681px) {
+    .skills {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+  

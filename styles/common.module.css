@@ -151,7 +151,7 @@
   overflow-y: auto;
 }
 
-@media (min-width: 681px) {
+@media (max-width: 681px) {
   .modal_content {
     position: fixed;
     top: 50%;
@@ -162,6 +162,17 @@
     z-index: 2;
     overflow-y: auto;
   }
+
+  .modal_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .9);
+    overflow: hidden;
+  }
+  
 }
 
 .project_detail {
