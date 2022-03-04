@@ -80,5 +80,6 @@
 
     .top_nav.hide_nav {
         display: flex;
+        visibility: visible;
     }
 }
