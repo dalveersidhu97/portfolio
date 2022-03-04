@@ -35,9 +35,12 @@
 
 .top_nav.show_nav {
     display: flex;
+    visibility: visible;
+    left: 0;
 }
 .top_nav.hide_nav {
-    display: none;
+    visibility: hidden;
+    left: -100%;
 }
 
 @media (max-width: 1030px) {
@@ -58,15 +61,18 @@
         align-items: center;
         justify-content: center;
         gap: 4rem;
-        display: none;
-        position: absolute;
-        width: 100%;
+        transition: all .3s;
+        visibility: hidden;
+        position: fixed;
+        width: 60%;
         height: 100%;
         overflow: hidden;
+        border-radius: 0;
         background-color: white;
         top: 0;
         left: 0;
         z-index: 100;
+        align-items: stretch;
     }
 }
 

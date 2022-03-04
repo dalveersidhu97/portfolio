@@ -2,7 +2,10 @@ import React, { FunctionComponent, useState } from "react";
 
 export type menuContext = {
     isMenuShown: boolean,
-    toggleMenu: () => void;
+    isSideBarShown: boolean,
+    toggleMenu: () => void,
+    toggleSideBar: () => void,
+    hideAll: () => void;
 };
 
 
@@ -14,13 +17,29 @@ const MenuProvider: FunctionComponent = ({ children }) => {
     
     const [isMenuShown, setIsMenuShown] = useState<boolean>(false);
 
+    const [isSideBarShown, setIsSideBarShown] = useState<boolean>(false);
+
+    const toggleSideBar = () => {
+        setIsMenuShown(false);
+        setIsSideBarShown(prevState => !prevState);
+    }
+
     const toggleMenu = () => {
+        setIsSideBarShown(false);
         setIsMenuShown(prevState => !prevState);
+    }
+
+    const hideAll = () => {
+        setIsMenuShown(false);
+        setIsSideBarShown(false);
     }
 
     const context = {
         isMenuShown,
-        toggleMenu
+        isSideBarShown,
+        toggleMenu,
+        toggleSideBar,
+        hideAll
     };
 
     return <MenuContext.Provider value={context}>

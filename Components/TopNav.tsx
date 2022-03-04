@@ -13,20 +13,19 @@ import {FaMale} from 'react-icons/fa';
 import { MenuContext } from "../context/MenuContext";
 
 const NavLink: FunctionComponent<{path: string}> = ({path, children}) => {
-
+    const context = useContext(MenuContext);
     const Router = useRouter();
     let activeClass = '';
     if(Router.pathname === path) activeClass = myStyles.active;
-    return <li className={activeClass}><Link href={path}><a className={cStyles.link}>{children}</a></Link></li>
+    return <li  onClick={() => {context?.hideAll()}} className={activeClass}><Link href={path}><a className={cStyles.link}>{children}</a></Link></li>
     
 }
 
-const TopNav:FunctionComponent<{showNav:boolean}> = ({showNav}) => {
-
-    const navClass =  (showNav?myStyles.show_nav:myStyles.hide_nav);
+const TopNav:FunctionComponent = () => {
     const context = useContext(MenuContext);
+    const navClass =  (context!.isMenuShown?myStyles.show_nav:myStyles.hide_nav);
     return <div className={styles.top_nav_container}>
-            <ul className={myStyles.top_nav+' '+navClass} onClick={context?.toggleMenu}>
+            <ul className={myStyles.top_nav+' '+navClass} onClick={e=> e.stopPropagation()}>
                 <NavLink path="/"><MdPermContactCalendar></MdPermContactCalendar><span>About</span></NavLink>
                 <NavLink path="/skills"><AiTwotoneSetting></AiTwotoneSetting><span>Skills</span></NavLink>
                 <NavLink path="/projects"><IoIosApps></IoIosApps><span>Projects</span></NavLink>
