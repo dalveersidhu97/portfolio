@@ -95,19 +95,18 @@
         position: absolute;
         top: 0;left: 0;
         width: 100%;
-        padding: 12px;
         display: flex;
-        gap: 1rem;
         justify-content:  flex-start;
         align-items: center;
     }
-
+    .top_nav span {padding: 8px;}
     .top_nav svg, .top_nav img {
         fill: #f7f7f7;
         width: 40px;
         height: 40px;
         vertical-align: middle;
     }
+    .top_nav .title span {padding: 0;}
     .top_nav img{border-radius: 50%;box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);}
     .top_nav .title {display: flex;flex-direction: column;justify-content: center;line-height:2.4rem;}
     .top_nav .my_name{color: #f7f7f7;font-size: 2rem;font-weight: 500;}

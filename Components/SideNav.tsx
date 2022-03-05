@@ -14,11 +14,16 @@ const SideBar:FunctionComponent = () => {
 
     const context = useContext(MenuContext);
 
+    const openSideBar = (e: React.MouseEvent) => {
+        e.stopPropagation();context?.toggleSideBar()
+    }
+
     const navClass =  (context!.isSideBarShown?myStyles.show_nav:myStyles.hide_nav);
+
     return <div className={styles.side_bar_container + ' '+ cStyles.card}>
         <div className={myStyles.top_nav}  onClick={() => {context?.hideAll()}}>
-        <span  className={myStyles.my_logo}  onClick={e => {e.stopPropagation();context?.toggleSideBar()}}><img src="https://scontent.fyyz1-1.fna.fbcdn.net/v/t31.18172-1/27912788_1787168041588204_4241064322790820528_o.jpg?stp=c0.13.320.320a_dst-jpg_p320x320&_nc_cat=101&ccb=1-5&_nc_sid=7206a8&_nc_ohc=wVbq_gPweTkAX8qDdsl&_nc_ht=scontent.fyyz1-1.fna&oh=00_AT9DNUJvPUNJEuMyR9KiXm2T0xm7LD8SvaYGozmb3o804A&oe=62458463"></img></span>
-            <span className={myStyles.title}><h2 className={myStyles.my_name}>Dalveer Singh</h2><span className={myStyles.sub_title}>Full Stack Web Developer</span></span>
+            <span  className={myStyles.my_logo} onClick={openSideBar}><img src="https://scontent.fyyz1-1.fna.fbcdn.net/v/t31.18172-1/27912788_1787168041588204_4241064322790820528_o.jpg?stp=c0.13.320.320a_dst-jpg_p320x320&_nc_cat=101&ccb=1-5&_nc_sid=7206a8&_nc_ohc=wVbq_gPweTkAX8qDdsl&_nc_ht=scontent.fyyz1-1.fna&oh=00_AT9DNUJvPUNJEuMyR9KiXm2T0xm7LD8SvaYGozmb3o804A&oe=62458463"></img></span>
+            <span className={myStyles.title} onClick={openSideBar}><h2 className={myStyles.my_name}>Dalveer Singh</h2><span className={myStyles.sub_title}>Full Stack Web Developer</span></span>
             <span className={myStyles.menu_icon} onClick={e=> {e.stopPropagation();context?.toggleMenu()}}><TiThMenu></TiThMenu> </span>
         </div>
         <div onClick={e=> e.stopPropagation()} className={myStyles.side_bar + ' ' + navClass}>
