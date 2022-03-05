@@ -14,3 +14,9 @@ body {
   line-height: 3rem;
   color: #4b5563;
 }
+
+@media (max-width: 680px) {
+  html {
+    font-size: 50%;
+  }
+}
