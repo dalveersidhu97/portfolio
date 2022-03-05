@@ -35,7 +35,7 @@
 }
 
 main.main_container {
-    padding: 3rem;
+    padding: 2rem 3rem;
     overflow-y: auto;
     overflow-x: hidden;
 }
