@@ -86,6 +86,8 @@
     align-items: center;
 }
 
+
+
 @media (max-width: 680px) {
 
     .top_nav {
@@ -105,7 +107,7 @@
         height: 40px;
         vertical-align: middle;
     }
-    .top_nav img{border-radius: 50%;}
+    .top_nav img{border-radius: 50%;box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);}
 
     .side_bar {
         position: fixed;
