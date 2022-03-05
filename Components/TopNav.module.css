@@ -36,11 +36,11 @@
 .top_nav.show_nav {
     display: flex;
     visibility: visible;
-    left: 0;
+    right: 0;
 }
 .top_nav.hide_nav {
     visibility: hidden;
-    left: -100%;
+    right: -100%;
 }
 
 @media (max-width: 1030px) {
@@ -71,7 +71,7 @@
         background-color: white;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
         top: 0;
-        left: 0;
+        right: 0;
         z-index: 100;
         align-items: stretch;
     }

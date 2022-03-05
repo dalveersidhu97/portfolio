@@ -112,11 +112,11 @@
     .top_nav .title {display: flex;flex-direction: column;justify-content: center;line-height:2.4rem;}
     .top_nav .my_name{color: #f7f7f7;font-size: 2rem;font-weight: 500;}
     .top_nav .sub_title{color: #f7f7f7;font-size: 1.4rem;font-weight: 400;}
-    .top_nav .my_logo {margin-left: auto;}
+    .top_nav .menu_icon {margin-left: auto;}
     .side_bar {
         position: fixed;
         top:0;
-        right: 0;
+        left: 0;
         width: 80%;
         height: 100%;
         visibility: hidden;
@@ -128,14 +128,14 @@
     }
     .side_bar.show_nav {
         display: flex;
-        right: 0;
+        left: 0;
         opacity: 1;
         visibility: visible;
     }
     
     .side_bar.hide_nav {
         visibility: hidden;
-        right: -100%;
+        left: -100%;
         opacity: 0;
     }
 
