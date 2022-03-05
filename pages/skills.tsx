@@ -117,9 +117,9 @@ const skills  = [
 
 const SkillsPage: NextPage = () => {
   return (
-    <div>
+    <article className={styles.article}>
         <Skills skills={skills}></Skills>
-    </div>
+    </article>
   );
 };
 
