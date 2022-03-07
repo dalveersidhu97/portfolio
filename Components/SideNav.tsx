@@ -33,13 +33,13 @@ const SideBar:FunctionComponent = () => {
                 </p>
                 <p className={myStyles.name}>Dalveer Singh</p>
                 <p className={myStyles.major}>Full Stack Web Developer</p>
-                <p className={myStyles.major}><a className={cStyles.link} href="#" ><MdDownloadForOffline/><span>Download Resume</span></a></p>
+                <p className={myStyles.major}><a className={cStyles.link} href="/resume/MyResume.pdf" ><MdDownloadForOffline/><span>Download Resume</span></a></p>
             </div>
 
             <div className={myStyles.contact_info}>
                 <p className={myStyles.info_item}><a className={cStyles.link} href="mailto:dalveersidhu97@gmail.com"><BsFillChatSquareTextFill/>&nbsp;&nbsp;dalveersidhu97@gmail.com</a></p>
                 <p className={myStyles.info_item}><a className={cStyles.link} href="tel:+19029880900"><BsTelephoneFill/>&nbsp;&nbsp;+19029880900</a></p>
-                <p className={myStyles.info_item}><a className={cStyles.link} href=""><address><FaMapMarkerAlt></FaMapMarkerAlt>&nbsp;&nbsp;13 Mendoza Dr, Brampton, ON</address></a></p>
+                <p className={myStyles.info_item}><a className={cStyles.link} href=""><address><FaMapMarkerAlt></FaMapMarkerAlt>&nbsp;&nbsp;Brampton, ON</address></a></p>
             </div>
 
             <div className={myStyles.social}>

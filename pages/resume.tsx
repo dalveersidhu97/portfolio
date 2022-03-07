@@ -33,7 +33,7 @@ const education = [
 
 const ResumePage: NextPage = () => {
   return (
-
+    <>
       <article className={styles.article}>
 
         <p>Web developer with ability to learn and collaborate in rapidly changing evironments and compositions.
@@ -84,6 +84,11 @@ const ResumePage: NextPage = () => {
           ))}
         </div>
       </article>
+
+      <article>
+      <p style={{textAlign:'center'}}><a className={styles.link} href="/resume/MyResume.pdf" >Download Resume</a></p>
+      </article>
+    </>
   );
 };
 
