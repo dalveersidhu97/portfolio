@@ -1,16 +1,15 @@
 import type { NextPage } from "next";
 import { useState } from "react";
-import {motion} from 'framer-motion';
+import { motion } from "framer-motion";
 import Modal from "../Components/Modal";
 import styles from "../styles/common.module.css";
 
 const projects = [
   {
     name: "Project Management System",
-    image:
-      "https://raw.githubusercontent.com/dalveersidhu97/NextJs-Quiz-App/main/Snapshos/snap.jpg",
+    image: "nodejs_project.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum veniam sequi unde ducimus voluptas ab perspiciatis labore. Reiciendis iste, officiis, consequuntur perspiciatis id rem, voluptatem corporis ipsa ea cumque pariatur.",
-    github: "",
+    github: "https://github.com/dalveersidhu97/final-project-node",
     deployed: "",
     skills: [
       "Node.js",
@@ -23,10 +22,9 @@ const projects = [
   },
   {
     name: "Online Banking System",
-    image:
-      "https://camo.githubusercontent.com/1de574f5160d38301070db0b082784eeac89cc3e85b82076c6be8f268a1391b8/68747470733a2f2f692e7974696d672e636f6d2f76692f7350326f5f5035663352672f68713732302e6a70673f7371703d2d6f61796d77456a434e4143454c774253467279713471704178554941525541414141414741456c41414449516a3041674b4a446541453d2672733d414f6e34434c447872374e46312d735374676a696870347068496557385166676d41",
+    image: "springmvc_project.jpg",
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-    github: "",
+    github: "https://github.com/dalveersidhu97/javaee_finalproject_grouph",
     deployed: "",
     skills: [
       "Spring MVC",
@@ -38,36 +36,58 @@ const projects = [
     ],
   },
   {
-    name: "Online Banking System",
-    image:
-      "https://raw.githubusercontent.com/dalveersidhu97/NextJs-Quiz-App/main/Snapshos/snap.jpg",
+    name: "Android Quiz App",
+    image: "android_project.jpg",
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-    github: "",
+    github: "https://github.com/dalveersidhu97/QuiziAndroidProject",
     deployed: "",
     skills: [
-      "Spring MVC",
-      "JSP",
-      "OracleDB",
-      "JDBC Template",
-      "Javascript",
-      "Bootstrap",
+      "Java",
+      "SQLite Database",
+      "Retrofit HTTP Library",
+      "MVC",
+      "REST API",
     ],
   },
   {
-    name: "Online Banking System",
-    image:
-      "https://camo.githubusercontent.com/1de574f5160d38301070db0b082784eeac89cc3e85b82076c6be8f268a1391b8/68747470733a2f2f692e7974696d672e636f6d2f76692f7350326f5f5035663352672f68713732302e6a70673f7371703d2d6f61796d77456a434e4143454c774253467279713471704178554941525541414141414741456c41414449516a3041674b4a446541453d2672733d414f6e34434c447872374e46312d735374676a696870347068496557385166676d41",
+    name: "Portfolio Website",
+    image: "portfolio_project.jpg",
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-    github: "",
+    github: "https://github.com/dalveersidhu97/portfolio",
     deployed: "",
     skills: [
-      "Spring MVC",
-      "JSP",
-      "OracleDB",
-      "JDBC Template",
-      "Javascript",
-      "Bootstrap",
+      "Node.js",
+      "Next.js",
+      "React.js",
+      "TypeScript",
+      "MongoDB",
+      "HTML5 & CSS3",
+      "Redux.js",
     ],
+  },
+  {
+    name: "Next Quiz Web App",
+    image: "nexts_quiz_project.jpg",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+    github: "https://github.com/dalveersidhu97/NextJs-Quiz-App",
+    deployed: "",
+    skills: [
+      "Node.js",
+      "Next.js",
+      "React.js",
+      "Redux.js",
+      "REST API",
+      "Javascript",
+      "HTML5 & CSS3",
+    ],
+  },
+  {
+    name: "E-Commerce Static Website",
+    image: "web_project.jpg",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+    github: "https://github.com/dalveersidhu97/WebProject",
+    deployed: "http://desicart.000webhostapp.com/",
+    skills: ["HTML5", "CSS3", "Javascript"],
   },
 ];
 
@@ -93,24 +113,42 @@ const ProjectsPage: NextPage = () => {
     setShowModal(false);
   };
 
+  const projectSkills = (skills: string[]) => {
+    return (
+      <div key={Math.random()} className={styles.project_skills}>
+        {skills.map((skill) => (
+          <span key={Math.random()}>{skill}</span>
+        ))}
+      </div>
+    );
+  };
 
   return (
     <div>
+      <article className={styles.article}>
+        <p>
+          I have create many projects since last 3.5 years Such as Movies Websites
+          to download movies, Youtube video, playlist or channle dowloader using
+          Youtube API, android app for movies. Some of them whose source code
+          still I have are :-
+        </p>
+      </article>
       <article className={styles.article}>
         <h2 className={styles.main_title}>Projects</h2>
         <div className={styles.projects}>
           {projects.map((project) => (
             <motion.div
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               key={project.name}
               onClick={() => {
                 projectClickHandler(project);
               }}
               className={styles.project + " " + styles.card}
             >
-              <img src={project.image} alt={project.name} />
+              <img src={"/img/" + project.image} alt={project.name} />
               <p>{project.name}</p>
+              {projectSkills(project.skills)}
             </motion.div>
           ))}
         </div>
@@ -120,9 +158,25 @@ const ProjectsPage: NextPage = () => {
         <Modal onClose={closeModal}>
           <div className={styles.project_detail}>
             <div className={styles.project_detail_right}>
-              <img src={clickedProject?.image}></img>
+              <img src={"/img/" + clickedProject?.image}></img>
+              <br />
+              <br />
               <div>
-                <a>Github</a> <a>Deployed</a>
+                {projectSkills(clickedProject!.skills)}
+                <a
+                  href={clickedProject!.github}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Github
+                </a>
+                <a
+                  href={clickedProject!.deployed}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Deployed
+                </a>
               </div>
               <h2>{clickedProject?.name}</h2>
               <p>{clickedProject?.desc}</p>
