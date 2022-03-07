@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import styles from "../styles/common.module.css";
 import {FaUniversity, FaBook, FaGraduationCap} from 'react-icons/fa';
 import {MdLocationCity} from 'react-icons/md';
-import {GrScorecard} from 'react-icons/Gr';
+import {GrScorecard} from 'react-icons/gr';
 import {GiTimeTrap} from 'react-icons/gi';
 import {MdAccessTimeFilled} from 'react-icons/md';
 
