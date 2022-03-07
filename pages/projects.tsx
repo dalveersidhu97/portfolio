@@ -36,20 +36,6 @@ const projects = [
     ],
   },
   {
-    name: "Android Quiz App",
-    image: "android_project.jpg",
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-    github: "https://github.com/dalveersidhu97/QuiziAndroidProject",
-    deployed: "",
-    skills: [
-      "Java",
-      "SQLite Database",
-      "Retrofit HTTP Library",
-      "MVC",
-      "REST API",
-    ],
-  },
-  {
     name: "Portfolio Website",
     image: "portfolio_project.jpg",
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
@@ -89,6 +75,20 @@ const projects = [
     deployed: "http://desicart.000webhostapp.com/",
     skills: ["HTML5", "CSS3", "Javascript"],
   },
+  {
+    name: "Android Quiz App",
+    image: "android_project.jpg",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+    github: "https://github.com/dalveersidhu97/QuiziAndroidProject",
+    deployed: "",
+    skills: [
+      "Java",
+      "SQLite Database",
+      "Retrofit HTTP Library",
+      "MVC",
+      "REST API",
+    ],
+  }
 ];
 
 type Project = {
@@ -127,7 +127,7 @@ const ProjectsPage: NextPage = () => {
     <div>
       <article className={styles.article}>
         <p>
-          I have create many projects since last 3.5 years Such as Movies Websites
+          I have create many project since last 3.5 years Such as Movies Websites
           to download movies, Youtube video, playlist or channle dowloader using
           Youtube API, android app for movies. Some of them whose source code
           still I have are :-

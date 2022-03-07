@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import { FunctionComponent } from "react";
 import Skills from "../Components/Skills";
 import styles from "../styles/common.module.css";
 
