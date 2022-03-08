@@ -25,8 +25,8 @@ const Home: NextPage = () => {
             <CgWebsite></CgWebsite>
             <p>
               <strong>Full Stack Web development</strong> - Single or Multipage
-              full statck websites using Node.js, Express.js, Next.js, Core PHP,
-              Spring MVC.
+              full statck websites using Node.js, Express.js, Next.js, React.js, Core PHP,
+              Spring MVC, SQL or NoSQL databases etc.
             </p>
           </div>
           <div>

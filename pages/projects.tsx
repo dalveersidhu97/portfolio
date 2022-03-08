@@ -56,7 +56,7 @@ const projects = [
     image: "nexts_quiz_project.jpg",
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     github: "https://github.com/dalveersidhu97/NextJs-Quiz-App",
-    deployed: "",
+    deployed: "https://next-js-quiz-app.vercel.app/",
     skills: [
       "Node.js",
       "Next.js",
