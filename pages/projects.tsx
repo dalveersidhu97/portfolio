@@ -6,6 +6,23 @@ import styles from "../styles/common.module.css";
 
 const projects = [
   {
+    name: "AssignDaku.com",
+    image: "assigndaku.jpg",
+    desc: "Utilized My Own SMS API, Typescript, Next.js, Custom Express Server, React.js, Mongoose, Strip Payments, TailwindCSS. Here I help others with programming bugs, assignments, and projects. I control user requests through my admin panel. This domain directly accesses my computer IP, so it may not open if my computer is turned off.",
+    github: "https://github.com/dalveersidhu97/assigndaku",
+    deployed: "",
+    skills: [
+      "Node.js",
+      "Next.js",
+      "React.js",
+      "TypeScript",
+      "Mongoose",
+      "TailwindCSS",
+      "HTML5 & CSS3",
+      "Redux.js",
+    ],
+  }
+  ,{
     name: "Project Management System",
     image: "nodejs_project.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum veniam sequi unde ducimus voluptas ab perspiciatis labore. Reiciendis iste, officiis, consequuntur perspiciatis id rem, voluptatem corporis ipsa ea cumque pariatur.",
