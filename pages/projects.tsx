@@ -10,7 +10,7 @@ const projects = [
     image: "assigndaku.jpg",
     desc: "Utilized My Own SMS API, Typescript, Next.js, Custom Express Server, React.js, Mongoose, Strip Payments, TailwindCSS. Here I help others with programming bugs, assignments, and projects. I control user requests through my admin panel. This domain directly accesses my computer IP, so it may not open if my computer is turned off.",
     github: "https://github.com/dalveersidhu97/assigndaku",
-    deployed: "",
+    deployed: "https://assigndaku.com/",
     skills: [
       "Node.js",
       "Next.js",
