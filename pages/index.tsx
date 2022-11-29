@@ -10,10 +10,10 @@ const Home: NextPage = () => {
       <article className={styles.article}>
         <h2 className={styles.main_title}>About Me</h2>
         <p>
-          I am a <strong>full statck web developer</strong> near{" "}
+          I am a <strong>fullstatck web developer</strong> near{" "}
           <strong>Toronto Ontario</strong>. I got my interests in coading since
           12th grade thats why I did my Graduation and Postgraduation in
-          computer application. Now, Coading has become my favourite passion and
+          computer application. Now, Coding has become my favourite passion and
           I love seeing the results of my efforts.
         </p>
       </article>

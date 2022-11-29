@@ -3,26 +3,84 @@ import Skills from "../Components/Skills";
 import styles from "../styles/common.module.css";
 
 const skills  = [
-
-  {title: 'Programming Languages', skills: [
+  {title: 'Back-End', skills: [
     {
-      name: "HTML5 & CSS3",
+      name: "Express.js",
+      level: "90%",
+      icon: "",
+    },
+    {
+      name: "GraphQL",
+      level: "90%",
+      icon: "",
+    },
+    {
+      name: "Sequelize.js",
+      level: "70%",
+      icon: "",
+    },
+    {
+      name: "Mongoose.js",
+      level: "70%",
+      icon: "",
+    },
+    {
+      name: "Jest for Unit testing",
+      level: "90%",
+      icon: "",
+    },
+  ]},
+  {title: 'Front-End', skills: [
+    {
+      name: "React.js",
+      level: "90%",
+      icon: "",
+    },
+    {
+      name: "JQuery",
+      level: "90%",
+      icon: "",
+    },
+    {
+      name: "TailwindCSS",
+      level: "90%",
+      icon: "",
+    },
+    {
+      name: "Bootstrap",
       level: "80%",
       icon: "",
     },
     {
+      name: "React Testing Library for Testing",
+      level: "90%",
+      icon: "",
+    },
+  ]},
+  {title: 'Programming Languages', skills: [
+    {
       name: "Javascript",
-      level: "70%",
+      level: "90%",
       icon: "",
     },
     {
       name: "Typescript",
-      level: "70%",
+      level: "90%",
       icon: "",
     },
     {
+      name: "HTML5 & CSS3",
+      level: "90%",
+      icon: "",
+    },
+    {
+      name: 'Java',
+      level: '80%',
+      icon: ''
+    },
+    {
       name: "PHP",
-      level: "80%",
+      level: "70%",
       icon: "",
     },
     {
@@ -30,81 +88,101 @@ const skills  = [
       level: "70%",
       icon: "",
     },
-    {
-      name: 'Java',
-      level: '80%',
-      icon: ''
-    }
   ]},
   {title: 'Frameworks / Libraries', skills: [
     {
-      name: "React.js",
-      level: "80%",
+      name: "Node.js",
+      level: "90%",
       icon: "",
     },
     {
       name: "Next.js",
-      level: "80%",
-      icon: "",
-    },
-    {
-      name: "Node.js",
       level: "70%",
       icon: "",
     },
     {
-      name: "Express.js",
-      level: "80%",
-      icon: "",
-    },
-    {
-      name: "SASS",
+      name: "GraphQL",
       level: "70%",
       icon: "",
     },
     {
-      name: "Bootstrap.js",
+      name: "Socket.io",
       level: "70%",
+      icon: "",
+    },
+    {
+      name: "Redux.js / Redux Tookit",
+      level: "90%",
       icon: "",
     }
   ]},
   {title: 'Database', skills: [
+    {
+      name: "PostgreSQL",
+      level: "90%",
+      icon: "",
+    },
+    {
+      name: "MySQL",
+      level: "90%",
+      icon: "",
+    },
+    {
+      name: "SQL Server",
+      level: "90%",
+      icon: "",
+    },
     {
       name: "MongoDB",
       level: "70%",
       icon: "",
     },
     {
-      name: "Mongoose",
+      name: "Mongoose (ORM)",
       level: "80%",
       icon: "",
     },
     {
-      name: "MySQL",
+      name: "Sequelize (ORM)",
       level: "80%",
       icon: "",
     },
-    {
-      name: "SQL Server",
-      level: "80%",
-      icon: "",
-    }
   ]},
-  {title: 'Other', skills: [
+  {title: 'More', skills: [
     {
-      name: "Github",
+      name: "Docker",
       level: "80%",
+      icon: "",
+    },
+    {
+      name: "Github & GitLab",
+      level: "90%",
       icon: "",
     },
     {
       name: "REST APIs",
+      level: "90%",
+      icon: "",
+    },
+    {
+      name: "MVC Architecture",
+      level: "90%",
+      icon: "",
+    },
+    {
+      name: "Test Driven Development (TDD)",
       level: "80%",
       icon: "",
     },
     {
-      name: "MVC",
+      name: "Unit Testing",
       level: "80%",
       icon: "",
+    },
+    {
+      name: 'Agile methodologies, JIRA',
+      level: '80%',
+      icon: ""
     },
     {
       name: "Chrome Extensions",
