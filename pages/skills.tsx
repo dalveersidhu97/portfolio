@@ -114,6 +114,11 @@ const skills  = [
       name: "Redux.js / Redux Tookit",
       level: "90%",
       icon: "",
+    },
+    {
+      name: 'OAuth, JWT',
+      level: "90%",
+      icon: "",
     }
   ]},
   {title: 'Database', skills: [

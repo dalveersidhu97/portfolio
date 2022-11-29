@@ -3,6 +3,9 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Modal from "../Components/Modal";
 import styles from "../styles/common.module.css";
+import { CgWebsite } from "react-icons/cg";
+import { BsCodeSlash } from "react-icons/bs";
+import { ImHtmlFive } from "react-icons/im";
 
 const projects = [
   {
@@ -143,15 +146,42 @@ const ProjectsPage: NextPage = () => {
   return (
     <div>
       <article className={styles.article}>
-        <p>
+        <h2 className={styles.main_title}>Work History</h2>
+        <p style={{ marginBottom: '2rem'}}>
+          With 1 year of experience as a fullstack Nodejs/Typescript developer.
+        </p>
+        <div className={styles.what_i_am}>
+          <div>
+            <CgWebsite></CgWebsite>
+            <p><strong>Full Stack Developer</strong> (Full Time 7 Months)</p>
+            <p>New World Inc., <address style={{ color: '#666', display: 'inline-block' }}>Toronto, ON</address></p>
+            <small><ul style={{ listStylePosition: 'inside' }}>
+              <li>Developed REST API using Node.js,
+              Typescript, Sequelize.js, and PostgresSQL database for the New World
+              NFT Platform.</li>
+              <li>Developed Front-End App Using React.js,
+              Redux.js, Typescript, TailwindCSS, etc.</li>
+            </ul></small>
+          </div>
+          <div>
+            <ImHtmlFive></ImHtmlFive>
+            <p><strong>Web Developer</strong> (Intern 4 Months)</p>
+            <p>Infowiz, <address style={{ color: '#666', display: 'inline-block' }}>Etobicoke, ON</address></p>
+            <small><ul style={{ listStylePosition: 'inside' }}>
+              <li>Working in Node.js, and Next.js environments using a custom Expressserver.</li>
+              <li>Building RESTful APIs that serve data to the React front-end.</li>
+            </ul></small>
+          </div>
+        </div>
+      </article>
+      <article className={styles.article}>
+        <h2 className={styles.main_title}>Personal projects</h2>
+        <p style={{ marginBottom: '2rem'}}>
           I have create many project since last 3.5 years Such as Movies Websites
           to download movies, Youtube video, playlist or channle dowloader using
           Youtube API, android app for movies. Some of them whose source code
           still I have are :-
         </p>
-      </article>
-      <article className={styles.article}>
-        <h2 className={styles.main_title}>Projects</h2>
         <div className={styles.projects}>
           {projects.map((project) => (
             <motion.div

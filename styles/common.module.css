@@ -49,7 +49,7 @@
 .what_i_am {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  gap: 2rem;
 }
 .what_i_am svg{
   width: 2.4rem;

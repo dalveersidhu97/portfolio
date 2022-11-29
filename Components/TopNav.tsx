@@ -28,7 +28,7 @@ const TopNav:FunctionComponent = () => {
             <ul className={myStyles.top_nav+' '+navClass} onClick={e=> e.stopPropagation()}>
                 <NavLink path="/"><MdPermContactCalendar></MdPermContactCalendar><span>About</span></NavLink>
                 <NavLink path="/skills"><AiTwotoneSetting></AiTwotoneSetting><span>Skills</span></NavLink>
-                <NavLink path="/projects"><IoIosApps></IoIosApps><span>Projects</span></NavLink>
+                <NavLink path="/projects"><IoIosApps></IoIosApps><span>Experience</span></NavLink>
                 <NavLink path="/resume"><FaMale></FaMale><span>Resume</span></NavLink>
             </ul>
         </div>
