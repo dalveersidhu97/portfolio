@@ -168,7 +168,7 @@ const ProjectsPage: NextPage = () => {
             <p><strong>Web Developer</strong> (Intern 4 Months)</p>
             <p>Infowiz, <address style={{ color: '#666', display: 'inline-block' }}>Etobicoke, ON</address></p>
             <small><ul style={{ listStylePosition: 'inside' }}>
-              <li>Working in Node.js, and Next.js environments using a custom Expressserver.</li>
+              <li>Working in Node.js, and Next.js environments using a custom Express server.</li>
               <li>Building RESTful APIs that serve data to the React front-end.</li>
             </ul></small>
           </div>
