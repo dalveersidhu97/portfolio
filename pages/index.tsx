@@ -10,7 +10,7 @@ const Home: NextPage = () => {
       <article className={styles.article}>
         <h2 className={styles.main_title}>About Me</h2>
         <p>
-          I am a <strong>fullstatck web developer</strong> near{" "}
+          I am a <strong>fullstack web developer</strong> near{" "}
           <strong>Toronto Ontario</strong>. I got my interests in coding since
           12th grade thats why I did my Graduation and Postgraduation in
           computer application. Now, Coding has become my favourite passion and
@@ -24,8 +24,8 @@ const Home: NextPage = () => {
           <div>
             <CgWebsite></CgWebsite>
             <p>
-              <strong>Full Stack Web development</strong> - Single or Multipage
-              full statck websites using Node.js, Express.js, Next.js, React.js, Core PHP,
+              <strong>Fullstack Web development</strong> - Single or Multipage
+              fullstack websites using Node.js, Express.js, Next.js, React.js, Core PHP,
               Spring MVC, SQL or NoSQL databases etc.
             </p>
           </div>
