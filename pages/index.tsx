@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         <h2 className={styles.main_title}>About Me</h2>
         <p>
           I am a <strong>fullstatck web developer</strong> near{" "}
-          <strong>Toronto Ontario</strong>. I got my interests in coading since
+          <strong>Toronto Ontario</strong>. I got my interests in coding since
           12th grade thats why I did my Graduation and Postgraduation in
           computer application. Now, Coding has become my favourite passion and
           I love seeing the results of my efforts.
